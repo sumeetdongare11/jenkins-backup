@@ -1,0 +1,27 @@
+Started by user [8mha:////4I347P3SpmvbcbCqzgcqNpJkBUcSr1lw4j9mkgT/jdf7AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL94tLc1NQSAB/Xi1XBAAAA[0mSUMEET
+Running as SYSTEM
+Building remotely on [8mha:////4Hq9wQEwoAfhDA0hOr5iWbHhtKMeaP0OOvRCs0hxwbNDAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygO40AumLp3sQAAAA=[0mnode2 in workspace /home/ec2-user/workspace/c-project
+The recommended git tool is: NONE
+using credential 0479df6f-32ca-478d-9182-bcd44114dd4f
+ > git rev-parse --resolve-git-dir /home/ec2-user/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sumeetdongare11/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/sumeetdongare11/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+using GIT_SSH to set credentials 
+[INFO] Currently running in a labeled security context
+[INFO] Currently SELinux is 'enforcing' on the host
+ > /usr/bin/chcon --type=ssh_home_t /home/ec2-user/workspace/c-project@tmp/jenkins-gitclient-ssh6885439662180950947.key
+ > git fetch --tags --force --progress -- https://github.com/sumeetdongare11/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 22165d8756758240f62b4726389adac53227e310 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 22165d8756758240f62b4726389adac53227e310 # timeout=10
+Commit message: "Create Abc"
+ > git rev-list --no-walk 22165d8756758240f62b4726389adac53227e310 # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins1260149663846848662.sh
++ cd /var/lib/jenkins/workspace/c-project
+/tmp/jenkins1260149663846848662.sh: line 2: cd: /var/lib/jenkins/workspace/c-project: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

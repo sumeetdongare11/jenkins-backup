@@ -1,0 +1,89 @@
+Started by user [8mha:////4I347P3SpmvbcbCqzgcqNpJkBUcSr1lw4j9mkgT/jdf7AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL94tLc1NQSAB/Xi1XBAAAA[0mSUMEET
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/c-project
+The recommended git tool is: NONE
+using credential 0479df6f-32ca-478d-9182-bcd44114dd4f
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sumeetdongare11/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/sumeetdongare11/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+using GIT_SSH to set credentials 
+[INFO] Currently running in a labeled security context
+[INFO] Currently SELinux is 'enforcing' on the host
+ > /usr/bin/chcon --type=ssh_home_t /var/lib/jenkins/workspace/c-project@tmp/jenkins-gitclient-ssh9550489051233792875.key
+ > git fetch --tags --force --progress -- https://github.com/sumeetdongare11/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision f7cafa9151887719dcd84dea185b98d57143289a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f7cafa9151887719dcd84dea185b98d57143289a # timeout=10
+Commit message: "assignments"
+ > git rev-list --no-walk f7cafa9151887719dcd84dea185b98d57143289a # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins15436769872812857480.sh
++ cd /var/lib/jenkins/workspace/c-project
++ make
+gcc -c main.c
+main.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ main() {
+ ^~~~
+main.c: In function ‘main’:
+main.c:4:9: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+         reverse();
+         ^~~~~~~
+main.c:5:2: warning: implicit declaration of function ‘big2’ [-Wimplicit-function-declaration]
+  big2();
+  ^~~~
+main.c:6:2: warning: implicit declaration of function ‘fact’ [-Wimplicit-function-declaration]
+  fact();
+  ^~~~
+main.c:7:2: warning: implicit declaration of function ‘big3’ [-Wimplicit-function-declaration]
+  big3();
+  ^~~~
+main.c:8:2: warning: implicit declaration of function ‘sorting’ [-Wimplicit-function-declaration]
+  sorting();
+  ^~~~~~~
+main.c:9:2: warning: implicit declaration of function ‘palindrom’ [-Wimplicit-function-declaration]
+  palindrom();
+  ^~~~~~~~~
+main.c:10:2: warning: implicit declaration of function ‘sum2’ [-Wimplicit-function-declaration]
+  sum2();
+  ^~~~
+main.c:11:2: warning: implicit declaration of function ‘fibo’; did you mean ‘fileno’? [-Wimplicit-function-declaration]
+  fibo();
+  ^~~~
+  fileno
+gcc -c big2.c
+big2.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ big2()
+ ^~~~
+gcc -c fact.c
+fact.c:2:2: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  fact() {
+  ^~~~
+gcc -c rev.c
+rev.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ reverse()
+ ^~~~~~~
+gcc -c big3.c
+big3.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ big3()
+ ^~~~
+gcc -c sorting.c
+sorting.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ sorting()
+ ^~~~~~~
+gcc -c palindrom.c
+palindrom.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ palindrom()
+ ^~~~~~~~~
+gcc -c sum2.c
+sum2.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ sum2()
+ ^~~~
+gcc -c fibo.c
+fibo.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ fibo() {
+ ^~~~
+gcc -o ABC.exe main.o big2.o fact.o rev.o big3.o sorting.o palindrom.o sum2.o fibo.o
+Finished: SUCCESS
